@@ -23,7 +23,7 @@ const mapKey uint32 = 0
 func main() {
 
 	// Name of the kernel function to trace.
-	fn := "sys_execve"
+	fn := "netif_receive_skb_internal"
 
 	// Allow the current process to lock memory for eBPF resources.
 	if err := rlimit.RemoveMemlock(); err != nil {
